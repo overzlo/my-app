@@ -73,7 +73,7 @@ export default function App() {
           <Slider {...settings}>
             {datans.map((item) => (
               <div className='text-img'>
-              <Card className="bg-dark">
+              <Card className="bg-light">
                   <Card.Img className='card-img'
                     src={
                       item.linkImg
