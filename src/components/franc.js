@@ -26,7 +26,7 @@ export const franc = [
     },
     {
         id: 6,
-        title: 'Percy Jackson',
+        title: 'Percy Jackson', 
         img: 'https://www.logolynx.com/images/logolynx/dc/dcd05e24de744432d912ec35988e549d.jpeg'
     },
     {
