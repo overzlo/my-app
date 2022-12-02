@@ -1,0 +1,11 @@
+.prototype{
+    display: flex;
+    margin-top: 60px;
+}
+
+.logo{
+    flex:1;
+}
+.info{
+    flex: 3;
+}

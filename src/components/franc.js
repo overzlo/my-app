@@ -22,7 +22,7 @@ export const franc = [
     {
         id: 5,
         title: 'Harry Potter',
-        img: 'https://13z1r62pqpkq29c3gw48di6l-wpengine.netdna-ssl.com/wp-content/uploads/2015/09/Wizarding-world-of-harry-potter-logo1.jpg'
+        img: 'https://media.harrypotterfanzone.com/harry-potter-logo-tutorial-final.jpg'
     },
     {
         id: 6,

@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Franc from '../Pages/Franc';
+import { Route } from 'react-router';
 
+import { BrowserRouter as Router, Routes, Link } from 'react-router-dom';
 
-
-import { Card, ListGroup } from 'react-bootstrap'
+import { Card, ListGroup, NavLink } from 'react-bootstrap'
 import './uni.css';
 import { franc } from './franc';
 import imgGirl from '../assets/1.jpg';
@@ -14,11 +16,11 @@ export default function App() {
 
   const hoverHandler = (e) => {
     e.style.ImgOverlay.display = "inline";
-  } 
+  }
   const outHandler = () => {
     console.log("onMouseLeave")
   }
-  
+
   const [defaultImage, setDefaultImage] = useState({});
   const settings = {
     dots: true,
@@ -62,32 +64,36 @@ export default function App() {
       linkDefault: imgGirl,
     }));
 
-   
+
   };
 
   return (
-    <div className='nscard'>
-      <Card className='bg-dark'>
-        <Card.Header className='text-light bg-dark'  as='h3'>FRANCHISES</Card.Header>
-        <div>
-          <Slider {...settings}>
-            {franc.map((item) => (
-              <div className='text-img'>
-              <Card className="bg-dark ">
-                  <Card.Img className='uni-img'
-                    src={
-                      item.img
-                    }
-                  />
-                <Card.ImgOverlay className='img-overlay'>
-                  <Card.Title className='text-light ' as='h3'>{item.title}</Card.Title>
-                </Card.ImgOverlay>
-              </Card>
-              </div>
-            ))}
-          </Slider>
-        </div>
-      </Card>
-    </div>
+   
+      <div className='nscard'>
+        <Card className='bg-dark'>
+          <Card.Header className='text-light bg-dark' as='h3'>FRANCHISES</Card.Header>
+          <div>
+            <Slider {...settings}>
+              {franc.map((item) => (
+                <div className='text-img'>
+                  <Card className="bg-dark ">
+                    <Card.Img className='uni-img' 
+                      src={
+                        item.img
+                      }
+                    />
+                    <Card.ImgOverlay className='img-overlay'>
+                      <Card.Title className='text-light ' as={Link} to="/francMCU " >{item.title}</Card.Title>
+                    </Card.ImgOverlay>
+                  </Card>
+                </div>
+              ))}
+            </Slider>
+          </div>
+        </Card>
+      </div>
+
+     
+ 
   );
 }

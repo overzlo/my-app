@@ -13,8 +13,8 @@ import Serials from '../Pages/Serials';
 import Cartoons from '../Pages/Cartoons';
 import Anime from '../Pages/Anime';
 import FAQ from '../Pages/FAQ';
-
-
+import Franc from '../Pages/Franc'
+import Login from '../Pages/Login'
 export default class eader extends Component {
   render() {
     return (
@@ -104,7 +104,7 @@ export default class eader extends Component {
                 <Form className="d-flex">
                   <Nav className='me-auto'>
                     <Button variant="dark" as={Link} to="/faq">FAQ</Button>
-                    <Button variant="dark" href="/about">Login</Button>
+                    <Button variant="dark" as={Link} to="/login   ">Login</Button>
 
                   </Nav>
 
@@ -128,7 +128,11 @@ export default class eader extends Component {
             <Route path='/cartoons' element={<Cartoons />} />
             <Route path='/anime' element={<Anime />} />
 
+
             <Route path='/fAQ' element={<FAQ />} />
+            <Route path='/login' element={<Login />} />
+
+            <Route path='/francMCU' element={<Franc />} />
 
           </Routes>
         </Router>
