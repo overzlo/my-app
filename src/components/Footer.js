@@ -7,7 +7,7 @@ export default class Footer extends Component {
     return (
    <Container>
     <Row>
-      <Col className ='text-center py-4' >
+      <Col className ='text-center py-4 text-light' >
       &copy; All Rights Reserved
       </Col>
     </Row>

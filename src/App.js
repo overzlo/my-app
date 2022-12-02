@@ -9,9 +9,11 @@ import './App.css';
 
 function App() {
   return (
-   <div>
+   <div className='mt-5'>
     <Header/>
+    
     <Footer/>
+    
    </div>
 
     
